@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/LendRecord1")
+@RequestMapping("/api/LendRecord1")
 public class LendRecordController1 {
     @Resource
     LendRecordMapper LendRecordMapper;

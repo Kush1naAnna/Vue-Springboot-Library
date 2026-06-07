@@ -119,17 +119,33 @@ export default {
       })
     })
   },
-  methods: {
-    circleTimer() {
+//   methods: {
+//     circleTimer() {
+//       this.getTimer()
+//       setInterval(() => {
+//         this.getTimer()
+//       }, 1000)
+//     },
+//     getTimer() {
+//       var d = new Date()
+//       var t = d.toLocaleString()
+//       document.getElementById('myTimer').innerHTML = t
+//     }
+//   }
+// }
+methods: {
+  circleTimer() {
+    this.getTimer()
+    setInterval(() => {
       this.getTimer()
-      setInterval(() => {
-        this.getTimer()
-      }, 1000)
-    },
-    getTimer() {
-      var d = new Date()
-      var t = d.toLocaleString()
-      document.getElementById('myTimer').innerHTML = t
+    }, 1000)
+  },
+  getTimer() {
+    var d = new Date()
+    var t = d.toLocaleString()
+    let timer = document.getElementById('myTimer');
+    if (timer) {
+      timer.innerHTML = t;
     }
   }
 }

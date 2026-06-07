@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/LendRecord")
+@RequestMapping("/api/LendRecord")
 public class LendRecordController {
     @Resource
     LendRecordMapper LendRecordMapper;

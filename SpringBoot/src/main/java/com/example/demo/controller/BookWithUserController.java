@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/bookwithuser")
+@RequestMapping("/api/bookwithuser")
 public class BookWithUserController {
     @Resource
     BookWithUserMapper BookWithUserMapper;
